@@ -1,0 +1,60 @@
+{
+  "id": "5d0b4994-dbf1-4d25-b4c8-59e3f5b90262",
+  "alias": "GetUserProfilePropertiesWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "GetUserProfileProperties"
+      },
+      "description": {
+        "default": "Retrieve properties"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "GetUserProfileProperties"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "get-user-profile-properties-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "get-user-profile-properties-web-part": {
+        "type": "path",
+        "path": "dist/get-user-profile-properties-web-part.js"
+      },
+      "GetUserProfilePropertiesWebPartStrings": {
+        "defaultPath": "lib/webparts/getUserProfileProperties/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.8.2",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.8.2",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.8.2",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      }
+    }
+  }
+}
